@@ -10,38 +10,39 @@
     <style>
         body, h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif}
         .w3-row-padding img {margin-bottom: 12px}
-        .w3-sidebar {width: 120px; background: #222;}
-        #main {margin-left: 120px}
-        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        .navbar {
+            background: #222;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background: #444;
+        }
     </style>
 </head>
 <body class="w3-black">
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <img src="your-avatar-url.jpg" style="width:100%">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-    </a>
-    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-eye w3-xxlarge"></i>
-        <p>PHOTOS</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-    </a>
-</nav>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#home"><i class="fa fa-home"></i> Home</a>
+    <a href="#about"><i class="fa fa-user"></i> About</a>
+    <a href="#photos"><i class="fa fa-eye"></i> Photos</a>
+    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+</div>
 
 <!-- Main Content -->
 <div class="w3-padding-large" id="main">
     <!-- Header -->
-    <header class="w3-container w3-padding-32 w3-center w3-black">
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
         <h1 class="w3-jumbo">I'm Phạm Tiến Đạt.</h1>
         <p>Content Marketer & Digital Artist.</p>
         <img src="your-profile-image.jpg" class="w3-image" width="992" height="1108">
@@ -79,7 +80,7 @@
         <p>HUTECH - Đại học Công nghệ TP.HCM (09/2021 - nay) - Chuyên ngành Marketing Tổng hợp</p>
     </div>
 
-    <!-- Photos Section (Giữ nguyên) -->
+    <!-- Photos Section -->
     <div class="w3-padding-64 w3-content" id="photos">
         <h2 class="w3-text-light-grey">My Photos</h2>
         <hr style="width:200px" class="w3-opacity">
