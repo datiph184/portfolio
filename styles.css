@@ -1,20 +1,52 @@
+/* Định dạng chung */
 body, h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
 }
-.navbar {
-    background: #222;
-    display: flex;
-    justify-content: space-around;
-    padding: 8px 0;
-}
-.navbar a {
-    flex-grow: 1;
-    text-align: center;
-    padding: 12px 0;
-    text-decoration: none;
-    font-size: 20px;
+body {
+    background-color: black;
     color: white;
+    margin: 0;
 }
-.navbar a:hover {
-    background: #444;
+
+/* Thanh điều hướng */
+.w3-bar {
+    display: flex;
+    justify-content: center; /* Canh đều */
+    background: #222;
+    padding: 10px 0;
+}
+.w3-bar a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.w3-bar a:hover {
+    background: #555;
+}
+
+/* Container chính */
+.w3-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hình ảnh */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Các đoạn line cách nhau */
+hr {
+    width: 200px;
+    border: 1px solid white;
+    opacity: 0.5;
+    margin: 20px auto;
+}
+
+/* Phần Contact */
+.w3-text-light-grey {
+    color: lightgrey;
 }
